@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         btnStart.text = "Stop"
         toggle = false
 
-        val delay =1000*etTime*60// 1000 milliseconds == 1 second
+        val delay =1000*etTime*60
         handler.postDelayed(object : Runnable {
             override fun run() {
                 Toast.makeText(baseContext, etMessage.trim(), Toast.LENGTH_SHORT).show()
