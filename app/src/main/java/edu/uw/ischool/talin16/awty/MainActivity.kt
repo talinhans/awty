@@ -86,7 +86,6 @@ class MainActivity : AppCompatActivity() {
         toggle = false
 
         val delay = 1000 * etTime * 60// 1000 milliseconds == 1 second
-        //val delay = 2000
         handler.postDelayed(object : Runnable {
             override fun run() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
